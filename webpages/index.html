@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Firewalld</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: grey;
+      }
+
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+      }
+
+      h1 {
+        margin-top: 50px;
+        font-size: 36px;
+        text-align: center;
+        color: #333;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left:190px;
+
+  }
+</style>
+  </head>
+  <body>
+    <h1>Firewalld Interface</h1>
+    <form action="/firewall" method="post">
+      <label for="command">Enter a firewalld command:</label>
+         <input type="text" id="command" name="command">
+      <input type="text" id="command1" name="command1" value="firewall-cmd --list-all" style="visibility:hidden;">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
